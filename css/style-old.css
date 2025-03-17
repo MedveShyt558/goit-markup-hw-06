@@ -158,11 +158,11 @@ a {
     background-color: #2e2f42;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-        url(../images/people-office.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        max-width: 1440px;
+    url(../images/people-office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
         margin: 0 auto;
 }
 
@@ -290,19 +290,19 @@ a {
 
 .command-title {
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        margin-bottom: 8px;
-        text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .command-text {
     font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .sn-list {

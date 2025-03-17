@@ -39,7 +39,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="mobile-menu is-open">
+            <div class="mobile-menu">
                 <div class="mobile-menu-container container">
                     <button class="mobile-menu-close">
                         <svg class="mobile-c" width="8" height="8">
@@ -98,7 +98,7 @@
                 </div>
             </div>
     </header>
-    <main class="hidden">
+    <main>
         <section class="hero">
             <div class="container">
                 <h1 class="business">Effective Solutions
@@ -155,7 +155,10 @@
                 <h2 class="title-two">Our Team</h2>
                 <ul class="command-list">
                     <li class="command-link-one">
+                        <picture>
+                            <source srcset="./images/team-1@2x.jpg" media="(min-resolution: 2dppx), (min-resolution: 192dpi)">
                         <img src="./images/img(4).jpg" alt="people" width="264">
+                        </picture>
                         <div class="worker-name">
                             <h3 class="command-title">Mark Guerrero</h3>
                             <p class="command-text">Product Designer</p>
@@ -192,7 +195,10 @@
                         </div>
                     </li>
                     <li class="command-link-one">
-                        <img src="./images/img(1).jpg" alt="people" width="264">
+                        <picture>
+                            <source srcset="./images/team-2@2x.jpg" media="(min-resolution: 2dppx), (min-resolution: 192dpi)">
+                            <img src="./images/img(1).jpg" alt="people" width="264">
+                        </picture>
                         <div class="worker-name">
                             <h3 class="command-title">Tom Ford</h3>
                             <p class="command-text">Frontend Developer</p>
@@ -229,7 +235,10 @@
                         </div>
                     </li>
                     <li class="command-link-one">
-                        <img src="./images/img(2).jpg" alt="people" width="264">
+                        <picture>
+                            <source srcset="./images/team-3@2x.jpg" media="(min-resolution: 2dppx), (min-resolution: 192dpi)">
+                            <img src="./images/img(2).jpg" alt="people" width="264">
+                        </picture>
                         <div class="worker-name">
                             <h3 class="command-title">Camila Garcia</h3>
                             <p class="command-text">Marketing</p>
@@ -266,7 +275,10 @@
                         </div>
                     </li>
                     <li class="command-link-one">
-                        <img src="./images/img(3).jpg" alt="people" width="264">
+                        <picture>
+                            <source srcset="./images/team-4@2x.jpg" media="(min-resolution: 2dppx), (min-resolution: 192dpi)">
+                            <img src="./images/img(3).jpg" alt="people" width="264">
+                        </picture>
                         <div class="worker-name">
                             <h3 class="command-title">Daniel Wilson</h3>
                             <p class="command-text">UI Designer</p>
@@ -311,7 +323,12 @@
                 <ul class="works-list">
                     <li class="works-list-item">
                         <div class="app-icon">
-                            <img src="./images/photo-Banking-app.jpg" alt="Our Projects" width="360" height="300">
+                            <picture>
+                                <source srcset="./images/photo-Banking-app.jpg 1x, ./images/banking-desktop@2x.jpg 2x" media="(min-width: 1158px)">
+                                <source srcset="./images/bank-tablet.jpg 1x, ./images/bank-tablet@2x.jpg 2x" media="(768px)">
+                                <source srcset="./images/bank-mobile.jpg 1x, ./images/bank-mobile@2x.jpg 2x">
+                                <img src="./images/photo-Banking-app.jpg" alt="Our Projects" width="360" height="300">
+                            </picture>
                             <p class="img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                             Cloud Storage App</p>
                         </div>
@@ -322,7 +339,12 @@
                     </li>
                     <li class="works-list-item">
                         <div class="app-icon">
-                            <img src="./images/photo-Payment.jpg" alt="Our Projects" width="360" height="300">
+                            <picture>
+                                <source srcset="./images/photo-Payment.jpg 1x, ./images/pay-desctop-@2x.jpg 2x" media="(min-width: 1158px)">
+                                <source srcset="./images/pay-tablet.jpg 1x, ./images/pay-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/pay-mobile.jpg 1x, ./images/pay-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                <img src="./images/photo-Payment.jpg" alt="Our Projects" width="360" height="300">
+                            </picture>
                             <p class="img-text">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                             · Cloud Storage App</p>
                         </div>
@@ -333,7 +355,12 @@
                     </li>
                     <li class="works-list-item">
                         <div class="app-icon">
-                            <img src="./images/photo-medet-app.jpg" alt="Our Projects" width="360" height="300">
+                            <picture>
+                                <source srcset="./images/photo-medet-app.jpg 1x, ./images/med-desktop@2x.jpg 2x" media="(min-width: 1158px)">
+                                <source srcset="./images/med-tablet.jpg 1x, ./images/med-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/med-mobile.jpg 1x, ./images/med-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                <img src="./images/photo-medet-app.jpg" alt="Our Projects" width="360" height="300">
+                            </picture>
                             <p class="img-text">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                             · Cloud Storage App</p>
                         </div>
@@ -344,7 +371,12 @@
                     </li>
                     <li class="works-list-item">
                         <div class="app-icon">
-                            <img src="./images/photo-taxi.jpg" alt="Our Projects" width="360" height="300">
+                            <picture>
+                                <source srcset="./images/photo-taxi.jpg 1x, ./images/taxi-deskyop@2x.jpg 2x" media="(min-width: 1158px)">
+                                <source srcset="./images/taxi-tablet.jpg 1x, ./images/taxi-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/taxi-mobile.jpg 1x, ./images/taxi-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                <img src="./images/photo-taxi.jpg" alt="Our Projects" width="360" height="300">
+                            </picture>
                             <p class="img-text">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                             · Cloud Storage App</p>
                         </div>
@@ -356,7 +388,12 @@
                     </li>
                     <li class="works-list-item">
                         <div class="app-icon">
-                            <img src="./images/photo-screen.jpg" alt="Our Projects" width="360" height="300">
+                            <picture>
+                                <source srcset="./images/photo-screen.jpg 1x, ./images/screen-desktop@2x.jpg 2x" media="(min-width: 1158px)">
+                                <source srcset="./images/screen-tablet.jpg 1x, ./images/screen-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/screen-mobile.jpg 1x, ./images/screenmobile@2x.jpg 2x" media="(min-width: 320px)">
+                                <img src="./images/photo-screen.jpg" alt="Our Projects" width="360" height="300">
+                            </picture>
                             <p class="img-text">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App
                                 · Cloud Storage App</p>
@@ -368,7 +405,12 @@
                     </li>
                     <li class="works-list-item">
                         <div class="app-icon">
-                            <img src="./images/photo-courses.jpg" alt="Our Projects" width="360" height="300">
+                            <picture>
+                                <source srcset="./images/photo-courses.jpg 1x, ./images/courses-deskyop@2x.jpg 2x" media="(min-width: 1158px)">
+                                <source srcset="./images/cours-tablet.jpg 1x, ./images/cours-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./images/cours-mobile.jpg 1x, ./images/cours-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                                <img src="./images/photo-courses.jpg" alt="Our Projects" width="360" height="300">
+                            </picture>
                             <p class="img-text">- 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App
                                 · Cloud Storage App</p>
