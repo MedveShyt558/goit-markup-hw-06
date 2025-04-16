@@ -409,6 +409,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -423,6 +424,7 @@ button {
     .hero {
         padding: 112px 0;
         width: 100%;
+        max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url(../images/bg-tablet.jpg);
     }
@@ -431,6 +433,7 @@ button {
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
     .hero {
         padding: 112px 0;
+        max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
          url(../images/bg-tablet@2x.jpg);
     }
@@ -439,6 +442,7 @@ button {
 @media screen and (min-width: 1158px) {
     .hero {
         width: 100%;
+        max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office.jpg);
@@ -502,7 +506,7 @@ button {
 
 @media screen and (min-width: 1158px) {
     .hero-button {
-        margin: 36px auto 0 auto;
+        margin: 48px auto 0 auto;
     }
 }
 
@@ -594,6 +598,9 @@ button {
     .advantages {
         padding: 120px 0;
     }
+    .text {
+        font-weight: 400;
+    }
 }
 
 /* command */
@@ -619,6 +626,7 @@ button {
 .command-link-one {
     background-color: #fff;
     width: 100%;
+    max-width: 264px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -686,7 +694,7 @@ button {
         gap: 64px 24px;
     }
     .command-link-one {
-        width: calc((100% - 48px) / 2);
+        width: calc((100% - 24px) / 2);
     }
     .command-link {
         width: calc((100% - 48px) / 2);
@@ -694,6 +702,12 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+    .command>.container {
+        max-width: 1158px;
+    }
+    .command {
+        padding: 120px 0;
+    }
     .command-link-one {
         width: calc((100% - 72px) / 4);
     }
@@ -766,6 +780,9 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+    .portfolio {
+        padding: 120px 0;
+    }
     .works-list-item {
         width: calc((100% - 48px) / 3);
     }
@@ -799,7 +816,8 @@ button {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        display: inline-block;
+        display: block;
+        text-align: center;
         margin-bottom: 16px;
     }
     .logo-footer-span {
@@ -813,8 +831,7 @@ button {
         max-width: 264px;
     }
     .socnet {
-        padding-top: 72px;
-        padding-bottom: 72px;
+        margin: 72px 0;
     }
     .socnet-p {
         font-weight: 500;
@@ -823,6 +840,8 @@ button {
         letter-spacing: 0.02em;
         color: #FFFFFF;
         margin-bottom: 16px;
+        display: block;
+        text-align: center;
     }
     .socnet-list {
         display: flex;
@@ -852,7 +871,9 @@ button {
         line-height: 1.50;
         letter-spacing: 0.02em;
         color: #FFFFFF;
-        margin-bottom: 16px
+        margin-bottom: 16px;
+        display: block;
+        text-align: center;
     }
     .sub-form {
         display: flex;
@@ -863,7 +884,7 @@ button {
     .sub-input {
         border: 1px solid #FFFFFF;
         border-radius: 4px;
-        width: 264px;
+        width: 288px;
         height: 40px;
         line-height: 2;
         font-size: 12px;
@@ -907,7 +928,6 @@ button {
     .sub-icon {
         fill: #FFFFFF;
         flex-shrink: 0;
-        margin-left: 16px;
     }
 }
 
@@ -916,16 +936,21 @@ button {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
+        gap: 72px 24px;
+        padding-left: 108px;
+        align-items: baseline;
     }
     .footer-p {
         max-width: 264px;
     }
     .sub-input {
         width: 264px;
+        margin-top: 0;
     }
     .footer-cont {
         gap: 24px;
+        width: 264px;
     }
     .sub-form {
         display: flex;
@@ -937,7 +962,10 @@ button {
         flex-direction: column;
     }
     .sub-text {
-        justify-content: flex-start;
+        text-align: left;
+    }
+    .socnet-p {
+        text-align: left;
     }
     .socnet-link {
         justify-content: flex-start;
@@ -947,15 +975,19 @@ button {
 @media screen and (min-width: 1158px) {
     .container-footer {
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-items: baseline;
-        margin: 0 auto;
+        padding-left: 0;
+        width: 1158px;
     }
     .footer {
         padding: 100px 0;
         flex-direction: row;
     }
     .footer-cont {
-        padding: 100px 0;
+        width: 264px;
+        margin-right: 120px;
     }
     .subscribe {
         margin-left: 80px;
